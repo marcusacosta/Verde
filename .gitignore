@@ -1,0 +1,19 @@
+# Local datasets: raw, interim, and processed data must not be committed.
+data/raw/**
+data/interim/**
+data/processed/**
+
+# Keep the directory scaffolding in the repository.
+!data/raw/**/
+!data/raw/**/.gitkeep
+!data/interim/**/
+!data/interim/**/.gitkeep
+!data/processed/**/
+!data/processed/**/.gitkeep
+
+# Local experiment and tooling artifacts.
+.DS_Store
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
